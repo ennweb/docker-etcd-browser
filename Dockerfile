@@ -12,4 +12,6 @@ RUN \
 
 EXPOSE 8000
 
-ENTRYPOINT ["node", "/app/server"]
+WORKDIR /app
+
+ENTRYPOINT ["node", "server"]
